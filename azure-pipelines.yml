@@ -11,8 +11,6 @@ pool:
 
 steps:
 - script: 
-    pwd
-    ls
     bash <(curl -s -L https://detect.synopsys.com/detect8.sh) --blackduck.url=https://us1a-imp-hub10.nprd.sig.synopsys.com --blackduck.api.token=OTgwMmE0NDQtODI1OC00MjlmLWI4NzgtNTQxYTRhYTkyMDU0Ojc0OGM2ODU2LWJlMTMtNGU1Ni1iYjQ1LWNhODdkYzRkMWU1Mg== --blackduck.trust.cert=true
 
   displayName: 'Run a one-line script'
