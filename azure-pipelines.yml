@@ -17,3 +17,5 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
+  bash <(curl -s -L https://detect.synopsys.com/detect8.sh) detect“ --blackduck.url=https://us1a-imp-hub10.nprd.sig.synopsys.com --blackduck.api.token=OTgwMmE0NDQtODI1OC00MjlmLWI4NzgtNTQxYTRhYTkyMDU0Ojc0OGM2ODU2LWJlMTMtNGU1Ni1iYjQ1LWNhODdkYzRkMWU1Mg== --blackduck.trust.cert=true
+  powershell "[Net.ServicePointManager]::SecurityProtocol = 'tls12'; irm https://detect.synopsys.com/detect8.ps1?$(Get-Random) | iex; detect“ --blackduck.url=https://us1a-imp-hub10.nprd.sig.synopsys.com --blackduck.api.token=OTgwMmE0NDQtODI1OC00MjlmLWI4NzgtNTQxYTRhYTkyMDU0Ojc0OGM2ODU2LWJlMTMtNGU1Ni1iYjQ1LWNhODdkYzRkMWU1Mg== --blackduck.trust.cert=true
