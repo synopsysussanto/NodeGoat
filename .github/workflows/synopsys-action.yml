@@ -39,6 +39,4 @@ jobs:
           polaris_assessment_types: "SCA,SAST"
           polaris_application_name: "AndroidApp"
           polaris_project_name: "GHActions-NodeGoat"
-          polaris_branch_name: "main'
-
-
+          polaris_branch_name: "main"
